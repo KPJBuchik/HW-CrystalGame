@@ -13,15 +13,16 @@ var wins = 0;
 var losses = 0;
 
 var diamondButton1 = Math.floor(Math.random() * 10);
-(console.log(diamonds))
+(console.log(diamondButton1))
 var diamondButton2 = Math.floor(Math.random() * 10);
 var diamondButton3 = Math.floor(Math.random() * 100);
 var diamondButton4 = Math.floor(Math.random() * 100);
 
 
 
-//for loop to generate buttons and populates the buttons with a number on load
-for (var i = 0; i < 4; i++) {
+//for loop to generate buttons and populates the buttons with a number on load.
+//this is inelegant right? 
+for (var i = 0; i < 1; i++) {
 
     var diamonds = $("<img>");
     diamonds.addClass("diamond-button");
@@ -29,10 +30,40 @@ for (var i = 0; i < 4; i++) {
     diamonds.attr("src", "http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg");
 
 
-    diamonds.attr("data-diamondvalue", diamondButton1,);
+    diamonds.attr("data-diamondvalue", diamondButton1);
     $("#crystals").append(diamonds);
 
+    var diamonds = $("<img>");
+    diamonds.addClass("diamond-button");
+
+    diamonds.attr("src", "http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg");
+
+
+    diamonds.attr("data-diamondvalue", diamondButton2);
+    $("#crystals").append(diamonds);
+
+    var diamonds = $("<img>");
+    diamonds.addClass("diamond-button");
+
+    diamonds.attr("src", "http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg");
+
+
+    diamonds.attr("data-diamondvalue", diamondButton3);
+    $("#crystals").append(diamonds);
+
+    var diamonds = $("<img>");
+    diamonds.addClass("diamond-button");
+
+    diamonds.attr("src", "http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg");
+
+
+    diamonds.attr("data-diamondvalue", diamondButton4);
+    $("#crystals").append(diamonds);
+
+
 }
+
+
 var reset = function () {
     counter = 0;
     var guessNumber = Math.floor(Math.random() * 200 + 100);
@@ -67,5 +98,6 @@ $(".diamond-button").on("click", function () {
 
 
 //game only registers loss after second click?????
+//make buttons disapear occasionally?
 
 
