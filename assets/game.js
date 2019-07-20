@@ -1,49 +1,49 @@
+
+//global variables
 $(document).ready(function () {
-    let guessNumber = Math.floor(Math.random() * 200 + 100);
     console.log(guessNumber);
     $("#objective").text(guessNumber);})
-//global variables
+
+ var guessNumber = Math.floor(Math.random() * 200 + 100);
+
+var counter = 0
 
 
 
-//generates value of random number
+let diamonds = [10, 5, 3]
 
-//generate values for crystals.  does it generate onclick or preload?
-var diamondOne =Math.floor(Math.random() * 100+1);
-console.log(diamondOne);
-var diamondTwo =Math.floor(Math.random() * 100+1);
-console.log(diamondTwo);
-var diamondThree=Math.floor(Math.random()* 100+1);
-console.log(diamondThree);
+for (var i = 0; i < diamonds.length; i++){
 
-var wins = 0;
-var losses = 0;
-var totalScore = 0;
+var diamondButton = $("<img>");
+diamondButton.addClass("diamond-button");
 
-//resets value on win or loss
-var reset = function(){
-    diamondOne= Math.floor(Math.random() * 100+1);
-    diamondTwo= Math.floor(Math.random() * 100+1);
-    diamondThree= Math.floor(Math.random() * 100+1);
-    guessNumber= Math.floor(Math.random() * 200+1)
-    totalScore = 0;
+diamondButton.attr("src", "http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg");
+
+
+diamondButton.attr("data-diamondvalue", diamonds[i]);
+$("#crystals").append(diamondButton);
+
 }
 
-//
+$(".diamond-button").on("click",function(){
 
-//creates on click function for each button adds to totalscore 
+    var crystalValue = ($(this).attr("data-diamondvalue"));
+    crystalValue = parseInt(crystalValue)
+    counter += crystalValue;
+    console.log(crystalValue);
+    console.log(counter);
+    if (counter === guessNumber) {
+        alert("You win!");
+    }
+    else if (counter >= guessNumber) {
+        alert("You lose!!");
+    }
+});
 
 
-//add diamond buttons together
-
-//if diamond button presses === guessNumber 
-//win++ 
-//reset()
 
 
-//if diamond button presses > guessNumber
-//losses++
-//reset()
+
 
 
 
