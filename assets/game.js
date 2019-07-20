@@ -1,7 +1,7 @@
-$(document).ready(function(){
-    let guessNumber = Math.floor(Math.random() * 200+100);
+$(document).ready(function () {
+    let guessNumber = Math.floor(Math.random() * 200 + 100);
     console.log(guessNumber);
-    $("#objective").html.guessNumber});
+    $("#objective").text(guessNumber);})
 //global variables
 
 
