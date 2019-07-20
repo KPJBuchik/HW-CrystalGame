@@ -49,7 +49,7 @@ $(".diamond-button").on("click",function(){
         $("#wins-column").text(wins++); //kind of works but deletes the text?      
         reset();
     }
-    else if (counter > guessNumber) {
+    if (counter > guessNumber) {
         losses++;
         alert("You Lose!")
         $("#losses-column").text(losses); //kind of works but deletes the text?
