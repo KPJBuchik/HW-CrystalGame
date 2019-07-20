@@ -4,7 +4,10 @@
 $(document).ready(function () {
     console.log(guessNumber);
     $("#objective").text(guessNumber);
+
 })
+
+
 //generates random number
 var guessNumber = Math.floor(Math.random() * 200 + 100);
 //global variables
@@ -18,6 +21,12 @@ var diamondButton2 = Math.floor(Math.random() * 10);
 var diamondButton3 = Math.floor(Math.random() * 100);
 var diamondButton4 = Math.floor(Math.random() * 100);
 
+var diamondButton5= 2
+var diamondButton6= 3
+
+
+
+
 
 
 //for loop to generate buttons and populates the buttons with a number on load.
@@ -25,7 +34,7 @@ var diamondButton4 = Math.floor(Math.random() * 100);
 for (var i = 0; i < 1; i++) {
 
     var diamonds = $("<img>");
-    diamonds.addClass("diamond-button");
+    diamonds.addClass("diamond-button diamond-button1");
 
     diamonds.attr("src", "http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg");
 
@@ -34,7 +43,7 @@ for (var i = 0; i < 1; i++) {
     $("#crystals").append(diamonds);
 
     var diamonds = $("<img>");
-    diamonds.addClass("diamond-button");
+    diamonds.addClass("diamond-button diamond-button2");
 
     diamonds.attr("src", "http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg");
 
@@ -60,8 +69,24 @@ for (var i = 0; i < 1; i++) {
     diamonds.attr("data-diamondvalue", diamondButton4);
     $("#crystals").append(diamonds);
 
+    var diamonds = $("<img>");
+    diamonds.addClass("diamond-button diamond-button5");
+
+    diamonds.attr("src", "http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg");
+
+
+    diamonds.attr("data-diamondvalue", diamondButton5);
+    $("#crystals").append(diamonds);
 
 }
+//makes buttons disappear 
+$(".diamond-button5").click(function(){
+    $(".diamond-button5").hide(4000);
+});
+
+$(".diamond-button6").click(function(){
+    $(".diamond-button6").hide(4000);
+});
 
 
 var reset = function () {
@@ -99,5 +124,8 @@ $(".diamond-button").on("click", function () {
 
 //game only registers loss after second click?????
 //make buttons disapear occasionally?
+//add hover to buton
+//add animations to buttons
+
 
 
