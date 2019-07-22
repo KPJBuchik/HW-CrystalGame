@@ -122,14 +122,15 @@ $(".diamond-button7").click(function () {
     audio.play();
 });
 
+
+/* //how to respond to keys
 function myFunction(event) {
     var x = event.charCode || event.keyCode;
     if (x == 111 || x == 79) { // o is 111, O is 79
       alert("You pressed the 'O' key!");
     }
   }
-// only resets counter and guessNumber
-
+*/
 
 
 $(".diamond-button").on("click", function () {
@@ -143,20 +144,19 @@ $(".diamond-button").on("click", function () {
         reset();
         wins++
         // alert("You win!");
-        $("#wins-column").text(wins); //kind of works but deletes the text?      
+        $("#wins-column").text(wins);  
 
     }
     else if (counter >= guessNumber) {
         reset();
         losses++;
         // alert("You Lose!")
-        $("#losses-column").text(losses); //kind of works but deletes the text?
+        $("#losses-column").text(losses); 
         reset();
 
     }
 });
 
 }
-//make buttons disapear occasionally?
 //RESET
 

@@ -1,6 +1,7 @@
 .diamond-button:before {
     color: #CD3237;
     float:left;
+    background-color:red;
     cursor: pointer;
     background:inherit;
     font-family:'Bungee Outline', cursive;
@@ -9,7 +10,12 @@
     margin:17px;
     font-size: 200px;
     display:inline block;
-    box-shadow: 5px 10px;
+    border-color:#20DEDF;
+    border-bottom-style:solid;
+    border-right-style:solid;
+    border-width:1px;
+    
+    box-shadow: 5px 10px #D75B5F;
 
   }
   .diamond-button:hover 
@@ -17,15 +23,16 @@
 
   .diamond-button:active {
     background-color: #5BD7D3;
-    box-shadow: 0 ;
+    
     transform: translateY(8px);
   }
 
 
   
   .diamond-button1:before{
+    box-shadow: 5px 10px #D75B5F;
     content: "A";
-    box-shadow: 5px 10px
+    
 
   }
   .diamond-button2:before {
@@ -55,16 +62,20 @@
     text-align:center;
     color:white}
 
-  #box {    margin:0 auto;
+  #box {    
+    margin:0 auto;
     text-align: center;
-    color: #CD3237;
-    font-family:'Vidaloka', serif;
-    font-weight:bold;
+    color:white;
+    font-family:'Bungee Outline', cursive;
+    font-weight:bold; 
+    font-size: 20px;
+
+
 
    
     }
 
-#score {margin:0 auto;
+#score {margin-right:20px;
         text-align:center;
         font-size:36px;
         color:white;
