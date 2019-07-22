@@ -1,7 +1,6 @@
 .diamond-button:before {
     color: #CD3237;
-    float:left;
-    background-color:red;
+    float:left;    
     cursor: pointer;
     background:inherit;
     font-family:'Bungee Outline', cursive;
@@ -10,13 +9,11 @@
     margin:17px;
     font-size: 200px;
     display:inline block;
-    border-color:#20DEDF;
-    border-bottom-style:solid;
+    box-shadow: 5px 10px  ;
     border-right-style:solid;
-    border-width:1px;
+    border-bottom-style:solid;
     
-    box-shadow: 5px 10px #D75B5F;
-
+    
   }
   .diamond-button:hover 
    {background-color: #5BD7D3;}
@@ -24,23 +21,24 @@
   .diamond-button:active {
     background-color: #5BD7D3;
     
-    transform: translateY(8px);
+    transform: translateY(4px)translateX(3px);
+     
   }
 
-
-  
   .diamond-button1:before{
-    box-shadow: 5px 10px #D75B5F;
+    border-right-style:solid;
+    border-bottom-style:solid;
+    color: #CD3237;
+    box-shadow: 5px 10px  ;
     content: "A";
-    
 
   }
   .diamond-button2:before {
       content:"B";
- 
+
   }
 
-  .diamond-button3:before {
+.diamond-button3:before {
     content:"C"
 }
 .diamond-button4:before {
@@ -58,34 +56,43 @@
 
 
   h1 {margin: 0 auto;
-    font-family: 'Vidaloka', serif;
+    
     text-align:center;
-    color:white}
+    color:white
+}
 
   #box {    
     margin:0 auto;
     text-align: center;
     color:white;
     font-family:'Bungee Outline', cursive;
-    font-weight:bold; 
+    font-weight:900;
     font-size: 20px;
-
-
-
-   
-    }
+     }
 
 #score {margin-right:20px;
         text-align:center;
+        font-weight:bold;
         font-size:36px;
         color:white;
         font-family:'Bungee Outline', cursive;}
 
-.diamond-button1 { margin-left:25px}
+.diamond-button1 { margin-left:25px;}
+
+marquee { font-family: 'Hanalei', cursive;
+
+
+color: white;
+font-size:26px;
+
+
+
+}
+
 
 
 
 
 body 
 {   background-color: #32cdc8;
-    background-ima ge:url("http://www.dpdworkshop.com/images/b4_kaunas-main-theater-rendering2.gif")}
+}
