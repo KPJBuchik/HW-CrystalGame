@@ -1,14 +1,16 @@
-.diamond-button:before {
+
+.diamond-button {
     color: #CD3237;
-    float:left;    
+        
     cursor: pointer;
     background:inherit;
     font-family:'Bungee Outline', cursive;
     margin-right:0 auto;
     margin-left:0 auto;
+    margin-left:25px;
     margin:17px;
     font-size: 200px;
-    display:inline block;
+    display:inline;
     box-shadow: 5px 10px  ;
     border-right-style:solid;
     border-bottom-style:solid;
@@ -25,42 +27,13 @@
      
   }
 
-  .diamond-button1:before{
-    border-right-style:solid;
-    border-bottom-style:solid;
-    color: #CD3237;
-    box-shadow: 5px 10px  ;
-    content: "A";
-
-  }
-  .diamond-button2:before {
-      content:"B";
-
-  }
-
-.diamond-button3:before {
-    content:"C"
-}
-.diamond-button4:before {
-    content:"D"
-}
-.diamond-button5:before {
-    content:"E"
-}
-.diamond-button6:before {
-    content:"F"
-}
-.diamond-button7:before {
-    content:"G"
-}
-
 
   h1 {margin: 0 auto;
     
     text-align:center;
     color:white
 }
-
+#crystals {margin-right:20px;}
   #box {    
     margin:0 auto;
     text-align: center;
@@ -70,14 +43,14 @@
     font-size: 20px;
      }
 
-#score {margin-right:20px;
+.total-score {margin-right:20px;
+  
         text-align:center;
         font-weight:bold;
         font-size:36px;
         color:white;
         font-family:'Bungee Outline', cursive;}
 
-.diamond-button1 { margin-left:25px;}
 
 marquee { font-family: 'Hanalei', cursive;
 
