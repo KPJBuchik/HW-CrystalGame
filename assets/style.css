@@ -1,55 +1,54 @@
-
 .diamond-button {
-    color: #CD3237;
-        
-    cursor: pointer;
-    background:inherit;
-    font-family:'Bungee Outline', cursive;
-    margin-right:0 auto;
-    margin-left:0 auto;
-    margin-left:25px;
-    margin:17px;
-    font-size: 200px;
-    display:inline;
-    box-shadow: 5px 10px  ;
-    border-right-style:solid;
-    border-bottom-style:solid;
-    
-    
-  }
-  .diamond-button:hover 
-   {background-color: #5BD7D3;}
+  color: #CD3237;
+  float:left;
+  cursor: pointer;
+  background:inherit;
+  font-family:'Bungee Outline', cursive;
+  margin-right:0 auto;
+  margin-left:0 auto;
+  margin-left:25px;
+  margin:17px;
+  font-size: 200px;
+  display:inline;
+  box-shadow: 5px 10px  ;
+  border-right-style:solid;
+  border-bottom-style:solid;
+  
+  
+}
+.diamond-button:hover 
+ {background-color: #5BD7D3;}
 
-  .diamond-button:active {
-    background-color: #5BD7D3;
-    
-    transform: translateY(4px)translateX(3px);
-     
-  }
+.diamond-button:active {
+  background-color: #5BD7D3;
+  
+  transform: translateY(4px)translateX(3px);
+   
+}
 
 
-  h1 {margin: 0 auto;
-    
-    text-align:center;
-    color:white
+h1 {margin: 0 auto;
+  
+  text-align:center;
+  color:white
 }
 #crystals {margin-right:20px;}
-  #box {    
-    margin:0 auto;
-    text-align: center;
-    color:white;
-    font-family:'Bungee Outline', cursive;
-    font-weight:900;
-    font-size: 20px;
-     }
+#box {    
+  margin:0 auto;
+  text-align: center;
+  color:white;
+  font-family:'Bungee Outline', cursive;
+  font-weight:900;
+  font-size: 20px;
+   }
 
-.total-score {margin-right:20px;
-  
-        text-align:center;
-        font-weight:bold;
-        font-size:36px;
-        color:white;
-        font-family:'Bungee Outline', cursive;}
+#score {margin-right:20px;
+      clear:both;
+      text-align:center;
+      font-weight:bold;
+      font-size:36px;
+      color:white;
+      font-family:'Bungee Outline', cursive;}
 
 
 marquee { font-family: 'Hanalei', cursive;
@@ -64,7 +63,8 @@ font-size:26px;
 
 
 
-
+#hidden {color:#32cdc8;
+  float:left;}
 
 body 
 {   background-color: #32cdc8;
