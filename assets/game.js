@@ -1,16 +1,15 @@
 //prints the guess number on the DOM
+
+
 $(document).ready(function () {
     console.log(guessNumber);
     $("#objective").text(guessNumber);
+    alert("Reach the number at the top of the page by clicking the letters, your wins and losses are displayed in the column below, each letter plays a sound of the corresponding note")
     
 
 })
-
-
-
-
-
-
+var wins = 0;
+var losses = 0;
 //generates number to guess
 var guessNumber = Math.floor(Math.random() * 200 + 100);
 var counter = 0;
@@ -50,25 +49,21 @@ diamondButton = [
 
 
 
-var wins = 0;
-var losses = 0;
-
-
 //for each to assign a random number to each button 
 diamondButton.forEach(function (populate) {
     var diamonds = $("<p>");
-    diamonds.text(populate.text)
-    diamonds.addClass("diamond-button")
-
+    diamonds.text(populate.text);
+    diamonds.addClass("diamond-button");
     diamonds.attr("data-value", Math.floor(Math.random() * 20));
     diamonds.attr("data-sound", populate.sound);
-
     $("#crystals").append(diamonds);
     
 
 
 
 });
+
+
 //resets the game on a win or loss 
 reset = function () {
     $("#crystals").empty();
